@@ -1,0 +1,57 @@
+.intro {
+  &__container {
+    position: relative;
+    padding-top: 153px;
+    padding-bottom: 152px;
+    background-image: url(.././img/intro_bgi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__title {
+    width: 500px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+  }
+  &__text {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 95px;
+    margin-bottom: 40px;
+    width: 405px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  &__text::before {
+    display: inline-block;
+    content: url(.././img/intro_pointer.svg);
+    position: absolute;
+    left: 110%;
+    top: 50px;
+  }
+  &__btn {
+    margin-left: 95px;
+    padding: 14px 39px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    background-color: $yellow;
+    border: none;
+    cursor: pointer;
+  }
+  &__decoration {
+    position: absolute;
+    width: 203px;
+    border: 15px solid $yellow;
+    left: 0;
+    top: 370px;
+  }
+}

@@ -1,0 +1,28 @@
+.registration {
+  background-color: $dark-navy;
+
+  &__container {
+    padding-top: 102px;
+    padding-bottom: 102px;
+    display: flex;
+    align-items: center;
+    gap: 336px;
+    background-image: url(.././img/r_bgi1.png), url(.././img/r_bgi1.png),
+      url(.././img/r_bgi2.png);
+    background-repeat: no-repeat;
+    background-position: 400px 200px, 870px 200px, 115% 200px;
+  }
+  &__title {
+    width: 415px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #ffffff;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+}
