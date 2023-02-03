@@ -6,7 +6,7 @@
     padding-bottom: 102px;
     display: flex;
     align-items: center;
-    gap: 336px;
+    justify-content: space-between;
     background-image: url(.././img/r_bgi1.png), url(.././img/r_bgi1.png),
       url(.././img/r_bgi2.png);
     background-repeat: no-repeat;
@@ -24,5 +24,57 @@
     display: flex;
     align-items: center;
     gap: 18px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .registration {
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .registration {
+    &__container {
+      flex-direction: column;
+    }
+    &__title {
+      width: unset;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .registration {
+    &__title {
+      width: 600px;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registration {
+    &__container {
+      background-image: url(.././img/r1_768.png), url(.././img/r2_768.png),
+        url(.././img/r3_768.png);
+      background-position: left bottom, center bottom, right bottom;
+    }
+    &__title {
+      width: 457px;
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .registration {
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 88px;
+    }
+    &__title {
+      width: 311px;
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 }

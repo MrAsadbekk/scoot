@@ -13,3 +13,20 @@ img {
 a {
   text-decoration: none;
 }
+.text {
+  display: none;
+}
+@media only screen and (max-width: 350px) {
+  .header {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .text {
+    display: block;
+  }
+}

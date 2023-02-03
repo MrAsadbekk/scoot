@@ -19,9 +19,10 @@
   }
   &__item {
     position: relative;
-    width: 350px;
+    max-width: 350px;
   }
   &__title {
+    margin: 0;
     margin-bottom: 27px;
     font-weight: 700;
     font-size: 24px;
@@ -57,5 +58,202 @@
     position: absolute;
     top: -120px;
     left: 20px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .manual {
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .manual {
+    &__container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    &__list {
+      flex-direction: column;
+      margin: 0;
+    }
+    &__item {
+      max-width: 500px;
+    }
+    &__decoration {
+      width: 512px;
+      transform: rotate(90deg);
+      bottom: 55%;
+      left: -10%;
+    }
+    &__item--one::before {
+      top: auto;
+      bottom: auto;
+      left: -120px;
+    }
+    &__item--two::before {
+      top: auto;
+      bottom: auto;
+      left: -120px;
+    }
+    &__item--three::before {
+      top: auto;
+      bottom: auto;
+      left: -120px;
+    }
+  }
+}
+@media only screen and (max-width: 970px) {
+  .manual {
+    &__decoration {
+      left: -12%;
+    }
+  }
+}
+@media only screen and (max-width: 940px) {
+  .manual {
+    &__decoration {
+      left: -14%;
+    }
+  }
+}
+@media only screen and (max-width: 910px) {
+  .manual {
+    &__decoration {
+      left: -16%;
+    }
+  }
+}
+@media only screen and (max-width: 880px) {
+  .manual {
+    &__decoration {
+      left: -14%;
+      bottom: 59%;
+    }
+    &__item {
+      width: 398px;
+    }
+    &__item--one::before {
+      top: auto;
+      bottom: auto;
+      left: -140px;
+    }
+    &__item--two::before {
+      top: auto;
+      bottom: auto;
+      left: -140px;
+    }
+    &__item--three::before {
+      top: auto;
+      bottom: auto;
+      left: -140px;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .manual {
+    &__decoration {
+      left: -16%;
+    }
+  }
+}
+@media only screen and (max-width: 830px) {
+  .manual {
+    &__decoration {
+      left: -18%;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .manual {
+    &__decoration {
+      left: -20%;
+    }
+  }
+}
+@media only screen and (max-width: 780px) {
+  .manual {
+    &__decoration {
+      left: -22%;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .manual {
+    &__decoration {
+      left: -24%;
+    }
+  }
+}
+@media only screen and (max-width: 740px) {
+  .manual {
+    &__container {
+      padding-top: 200px;
+    }
+    &__decoration {
+      display: none;
+    }
+    &__list {
+      align-items: center;
+      gap: 150px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__item--one::before {
+      left: auto;
+      right: auto;
+      top: -80%;
+    }
+    &__item--two::before {
+      left: auto;
+      right: auto;
+      top: -80%;
+    }
+    &__item--three::before {
+      left: auto;
+      right: auto;
+      top: -80%;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .manual {
+    &__conatainer {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__list {
+      gap: 130px;
+    }
+    &__item {
+      width: 311px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__item--one::before {
+      content: url(.././img/manual1_b375.svg);
+      top: -80px;
+    }
+    &__item--two::before {
+      content: url(.././img/manual2_b375.svg);
+      top: -80px;
+    }
+    &__item--three::before {
+      content: url(.././img/manual3_b375.svg);
+      top: -80px;
+    }
   }
 }

@@ -55,3 +55,66 @@
     top: 370px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .intro {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      width: 500px;
+      margin-left: 0;
+      text-align: center;
+    }
+    &__text::before {
+      display: none;
+    }
+    &__btn {
+      margin-left: 0;
+      position: relative;
+    }
+    &__btn::before {
+      content: url(.././img/intro_m_pointer.svg);
+      position: absolute;
+      bottom: -150px;
+      right: 100px;
+    }
+    &__decoration {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .intro {
+    &__container {
+      max-width: 550px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 80px;
+    }
+    &__title {
+      width: 400px;
+    }
+    &__text {
+      width: 400px;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .intro {
+    &__title {
+      width: 311px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__text {
+      width: 311px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}

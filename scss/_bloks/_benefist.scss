@@ -45,7 +45,7 @@
     display: inline-block;
     content: url(.././img/benefist_pointer.svg);
     position: absolute;
-    right: -180%;
+    right: -140%;
     bottom: 0;
   }
   &__box--fiwe {
@@ -65,7 +65,7 @@
     display: inline-block;
     content: url(.././img/benefist_pointer.svg);
     position: absolute;
-    left: 200%;
+    left: 100%;
     top: 80px;
   }
   &__img {
@@ -84,7 +84,6 @@
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
-    width: 445px;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -100,5 +99,127 @@
     background-color: $yellow;
     border: none;
     cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .benefist {
+    &__box--one {
+      padding-left: 40px;
+      padding-right: 40px;
+      gap: 100px;
+    }
+    &__box--two {
+      padding-left: 40px;
+      padding-right: 40px;
+      gap: 100px;
+    }
+    &__box--three {
+      padding-left: 40px;
+      padding-right: 40px;
+      gap: 100px;
+    }
+    &__box--one::before {
+      display: none;
+    }
+    &__box--two::before {
+      display: none;
+    }
+    &__box--three::before {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .benefist {
+    &__box--one {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box--one &__img {
+      order: -1;
+    }
+    &__box--two {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box--three {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box--three &__img {
+      order: -1;
+    }
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__box--four::before {
+      display: none;
+    }
+    &__box--fiwe::before {
+      display: none;
+    }
+    &__box--six::before {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  .benefist {
+    &__container {
+      margin-bottom: 120px;
+      gap: 120px;
+    }
+    &__box--one {
+      gap: 56px;
+    }
+    &__box--two {
+      gap: 56px;
+    }
+    &__box--three {
+      gap: 56px;
+    }
+    &__title {
+      width: 311px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+    &__text {
+      width: 311px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__img {
+      width: 311px;
+      height: 311px;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .benefist {
+    &__box--one {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__box--two {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__box--three {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 }
