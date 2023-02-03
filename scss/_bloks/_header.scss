@@ -23,6 +23,10 @@
     font-size: 15px;
     line-height: 25px;
     color: $dim-grey;
+    transition: all 0.3s ease;
+  }
+  &__link:hover {
+    color: #000;
   }
   &__btn {
     padding: 14px 39px;
@@ -34,6 +38,14 @@
     border: none;
     background-color: $yellow;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  &__btn:hover {
+    box-shadow: 0 0 5px 0 $yellow;
+  }
+  &__logo:hover {
+    transition: all 0.3 ease;
+    opacity: 0.8;
   }
   &__logo--img {
     margin: 0;
