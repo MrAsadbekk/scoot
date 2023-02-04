@@ -1,93 +1,30 @@
 .benefist {
   &__container {
-    margin-bottom: 330px;
+    padding-top: 200px;
+    padding-bottom: 330px;
     display: flex;
     flex-direction: column;
     gap: 160px;
   }
-  &__box--one {
-    position: relative;
-    display: flex;
-    gap: 220px;
-  }
-  &__box--one::before {
-    display: inline-block;
-    content: url(.././img/benefist_bgi.png);
-    position: absolute;
-    left: 100%;
-  }
-  &__box--two {
-    position: relative;
-    display: flex;
-    gap: 220px;
-  }
-  &__box--two::before {
-    display: inline-block;
-    content: url(.././img/benefist_bgi.png);
-    position: absolute;
-    right: 100%;
-  }
-  &__box--three {
-    position: relative;
-    display: flex;
-    gap: 220px;
-  }
-  &__box--three::before {
-    display: inline-block;
-    content: url(.././img/benefist_bgi.png);
-    position: absolute;
-    left: 100%;
-  }
-  &__box--four {
-    position: relative;
-  }
-  &__box--four::before {
-    display: inline-block;
-    content: url(.././img/benefist_pointer.svg);
-    position: absolute;
-    right: -140%;
-    bottom: 0;
-  }
-  &__box--fiwe {
-    position: relative;
-  }
-  &__box--fiwe::before {
-    display: inline-block;
-    content: url(.././img/benefist_pointer2.svg);
-    position: absolute;
-    right: 210%;
-    top: 0;
-  }
-  &__box--six {
-    position: relative;
-  }
-  &__box--six::before {
-    display: inline-block;
-    content: url(.././img/benefist_pointer.svg);
-    position: absolute;
-    left: 100%;
-    top: 80px;
-  }
-  &__img {
-    border-radius: 50%;
-  }
   &__title {
+    margin: 0;
     width: 445px;
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.14286px;
-    color: $dark-navy;
+    color: #495567;
   }
   &__text {
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
+    width: 445px;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-    color: $dim-grey;
+    color: #939caa;
   }
   &__btn {
     padding: 14px 44px;
@@ -96,105 +33,234 @@
     line-height: 25px;
     text-align: center;
     color: #ffffff;
-    background-color: $yellow;
+    background-color: #fcb72b;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
   }
-  &__btn:hover {
-    box-shadow: 0 0 5px 0 $yellow;
+  &__box--two {
+    display: flex;
+    width: 100%;
+  }
+  &__left {
+    margin-left: auto;
+  }
+  &__bgi--one {
+    background-image: url(.././img/benefist_bgi.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 900px);
+  }
+  &__img {
+    border-radius: 50%;
+    z-index: -1;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__bgi--decoration {
+    background-image: url(.././img/benefist_pointer.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 350px) bottom;
+  }
+  &__bgi--two {
+    background-image: url(.././img/benefist_pointer2.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 650px) top;
+  }
+  &__bgi--decoration1 {
+    background-image: url(.././img/benefist_bgi.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 900px);
+  }
+  &__bgi--three {
+    background-image: url(.././img/benefist_pointer.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 650px) top;
+  }
+  &__bgi--decoration2 {
+    background-image: url(.././img/benefist_bgi.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 900px);
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1350px) {
   .benefist {
-    &__box--one {
-      padding-left: 40px;
-      padding-right: 40px;
-      gap: 100px;
+    &__bgi--one {
+      background-position: calc(50% + 800px);
     }
-    &__box--two {
-      padding-left: 40px;
-      padding-right: 40px;
-      gap: 100px;
+    &__bgi--decoration {
+      background-position: calc(50% + 300px) bottom;
     }
-    &__box--three {
-      padding-left: 40px;
-      padding-right: 40px;
-      gap: 100px;
+    &__bgi--decoration1 {
+      background-position: calc(50% - 800px);
     }
-    &__box--one::before {
-      display: none;
+    &__bgi--decoration2 {
+      background-position: calc(50% + 800px);
     }
-    &__box--two::before {
-      display: none;
-    }
-    &__box--three::before {
-      display: none;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .benefist {
+    &__content {
+      padding-left: 70px;
+      padding-right: 70px;
     }
   }
 }
 @media only screen and (max-width: 1100px) {
   .benefist {
-    &__box--one {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    &__bgi--one {
+      background-position: calc(50% + 750px);
     }
-    &__box--one &__img {
-      order: -1;
+    &__bgi--decoration1 {
+      background-position: calc(50% - 750px);
     }
-    &__box--two {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__box--three {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__box--three &__img {
-      order: -1;
-    }
-    &__title {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    &__text {
-      text-align: center;
-    }
-    &__btn {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    &__box--four::before {
-      display: none;
-    }
-    &__box--fiwe::before {
-      display: none;
-    }
-    &__box--six::before {
-      display: none;
+    &__bgi--decoration2 {
+      background-position: calc(50% + 750px);
     }
   }
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 1050px) {
+  .benefist {
+    &__content {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__content:nth-child(odd) &__img {
+      order: -1;
+    }
+    &__img {
+      margin-bottom: 42px;
+    }
+    &__title {
+      width: 600px;
+      text-align: center;
+    }
+    &__text {
+      width: 600px;
+      text-align: center;
+    }
+    &__bgi--one {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 600px) top;
+    }
+    &__bgi--decoration {
+      background-image: url(.././img/benefist_pointer.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50%) center;
+    }
+    &__bgi--two {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% - 600px) top;
+    }
+    &__bgi--decoration1 {
+      background-image: url(.././img/benefist_pointer2.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50% - 350px) top;
+    }
+    &__bgi--three {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 600px) top;
+    }
+    &__bgi--decoration2 {
+      background-image: url(.././img/benefist_pointer.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 350px) top;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .benefist {
+    &__title {
+      width: 457px;
+    }
+    &__text {
+      width: 457px;
+    }
+    &__bgi--one {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 500px) top;
+    }
+    &__bgi--two {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% - 500px) top;
+    }
+    &__bgi--three {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 500px) top;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .benefist {
+    &__bgi--decoration {
+      background-image: url(.././img/benefist_pointer.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 50px) center;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .benefist {
+    &__bgi--decoration {
+      background-image: url(.././img/benefist_pointer.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 100px) center;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
   .benefist {
     &__container {
-      margin-bottom: 120px;
-      gap: 120px;
+      padding-top: 100px;
+      padding-bottom: 200px;
     }
-    &__box--one {
-      gap: 56px;
+    &__bgi--decoration {
+      background-image: url(.././img/benefist_pointer.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 150px) center;
     }
-    &__box--two {
-      gap: 56px;
+    &__bgi--one {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 450px) top;
     }
-    &__box--three {
-      gap: 56px;
+    &__bgi--two {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% - 450px) top;
     }
+    &__bgi--three {
+      background-image: url(.././img/benefist_bgi.png);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 450px) top;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .benefist {
+    &__title {
+      width: 400px;
+    }
+    &__text {
+      width: 400px;
+    }
+    &__bgi--decoration {
+      background-image: url(.././img/benefist_pointer.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50% + 150px) calc(50% - 50px);
+    }
+  }
+}
+@media only screen and (max-width: 470px) {
+  .benefist {
     &__title {
       width: 311px;
       font-size: 32px;
@@ -207,23 +273,36 @@
     }
     &__img {
       width: 311px;
-      height: 311px;
+    }
+    &__bgi--decoration {
+      background-image: url(.././img/pointer_460.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50%) calc(50% - 100px);
+    }
+    &__bgi--decoration1 {
+      background-image: url(.././img/pointer2_460.svg);
+      background-position: calc(50% - 100px) top;
+    }
+    &__bgi--decoration {
+      background-image: url(.././img/pointer_460.svg);
+      background-repeat: no-repeat;
+      background-position: calc(50%) top;
     }
   }
 }
 @media only screen and (max-width: 376px) {
   .benefist {
-    &__box--one {
-      padding-left: 32px;
-      padding-right: 32px;
+    &__bgi--decoration {
+      background-position: calc(50% + 40px) calc(50% - 100px);
     }
-    &__box--two {
-      padding-left: 32px;
-      padding-right: 32px;
+    &__bgi--decoration1 {
+      background-position: calc(50% - 50px) top;
     }
-    &__box--three {
-      padding-left: 32px;
-      padding-right: 32px;
+    &__bgi--decoration2 {
+      background-position: calc(50% + 300px) top;
+    }
+    &__img {
+      width: 311px;
     }
   }
 }
