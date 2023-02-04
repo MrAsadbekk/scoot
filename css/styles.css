@@ -884,6 +884,9 @@ a {
   border: none;
   cursor: pointer;
 }
+.benefist__btn:hover {
+  box-shadow: 0 0 5px 0 #fcb72b;
+}
 .benefist__box--two {
   display: flex;
   width: 100%;

@@ -37,6 +37,9 @@
     border: none;
     cursor: pointer;
   }
+  &__btn:hover {
+    box-shadow: 0 0 5px 0 $yellow;
+  }
   &__box--two {
     display: flex;
     width: 100%;
