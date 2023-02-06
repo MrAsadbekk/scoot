@@ -1,0 +1,55 @@
+.benefist__about {
+  padding-top: 120px;
+
+  &__box {
+    background-image: url(.././img/about_pointer1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 350px) bottom;
+  }
+  &__box--two {
+    background-image: url(.././img/benefist_bgi.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 850px) center;
+  }
+  &__box--three {
+    background-image: url(.././img/benefist_pointer2.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 750px) top;
+  }
+  &__box--four {
+    background-image: url(.././img/benefist_bgi.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 850px) center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 220px;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+  }
+  &__text {
+    margin: 0;
+    padding: 0;
+    width: 445px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+  &__img {
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
