@@ -16,3 +16,39 @@
     color: #ffffff;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .intro__about {
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro__about {
+    &__container {
+      background-image: url(.././img/a_intro768.png);
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .intro__about {
+    &__title {
+      font-size: 46px;
+      line-height: 46px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .intro__about {
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__title {
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}

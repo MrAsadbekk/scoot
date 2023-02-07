@@ -1,5 +1,4 @@
 .faqs {
-  padding-top: 120px;
   padding-bottom: 160px;
 
   &__title {
@@ -144,5 +143,163 @@
   }
   &__open__btn {
     background-image: url(.././img/about_input_activ.svg);
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .faqs {
+    &__container {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .faqs {
+    &__container {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .faqs {
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__box {
+      align-items: center;
+      flex-direction: column;
+    }
+    &__box--mb {
+      margin-bottom: 64px;
+    }
+    &__box__title {
+      margin-bottom: 32px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .faqs {
+    &__box--one {
+      width: 680px;
+    }
+    &__box--two {
+      width: 680px;
+    }
+  }
+}
+@media only screen and (max-width: 730px) {
+  .faqs {
+    &__box--one {
+      width: 650px;
+    }
+    &__box--two {
+      width: 650px;
+    }
+  }
+}
+@media only screen and (max-width: 690px) {
+  .faqs {
+    &__box--one {
+      width: 620px;
+    }
+    &__box--two {
+      width: 620px;
+    }
+  }
+}
+@media only screen and (max-width: 660px) {
+  .faqs {
+    &__box--one {
+      width: 600px;
+    }
+    &__box--two {
+      width: 600px;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .faqs {
+    &__box--one {
+      width: 570px;
+    }
+    &__box--two {
+      width: 570px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .faqs {
+    &__box--one {
+      width: 520px;
+    }
+    &__box--two {
+      width: 520px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .faqs {
+    &__box--one {
+      width: 500px;
+    }
+    &__box--two {
+      width: 500px;
+    }
+    &__minititle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  .faqs {
+    &__box__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__box--one {
+      width: 440px;
+    }
+    &__box--two {
+      width: 440px;
+    }
+  }
+}
+@media only screen and (max-width: 470px) {
+  .faqs {
+    &__box--one {
+      width: 400px;
+    }
+    &__box--two {
+      width: 400px;
+    }
+    &__minibox {
+      padding: 32px;
+    }
+    &__btn {
+      right: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .faqs {
+    padding-bottom: 120px;
+
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__box--one {
+      width: 311px;
+    }
+    &__box--two {
+      width: 311px;
+    }
+    &__minititle {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
