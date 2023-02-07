@@ -1958,4 +1958,137 @@ a {
     font-size: 18px;
     line-height: 24px;
   }
+}
+.intro__careers__container {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image: url(../../img/careers_intro.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.intro__careers__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #ffffff;
+}
+
+.benefist__careers {
+  padding-top: 120px;
+}
+.benefist__careers__box {
+  margin: 0;
+  padding: 0;
+  background-image: url(.././img/benefist_bgi.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 900px) center;
+}
+.benefist__careers__box--one {
+  margin: 0;
+  padding: 0;
+  background-image: url(.././img/benefist_pointer.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 300px) bottom;
+}
+.benefist__careers__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefist__careers__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  width: 445px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+.benefist__careers__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 445px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+.benefist__careers__btn {
+  padding: 14px 48px;
+  background-color: #fcb72b;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.benefist__careers__img {
+  margin: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.connection {
+  padding-bottom: 160px;
+}
+.connection__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.connection__box {
+  margin: 0;
+  padding: 0;
+  padding: 32px 64px 35px 40px;
+  padding-top: 32px;
+  padding-bottom: 35px;
+  background-color: #f2f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.connection__box--one {
+  margin: 0;
+  padding: 0;
+}
+.connection__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.connection__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+.connection__btn {
+  padding: 14px 67px;
+  background-color: #fcb72b;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

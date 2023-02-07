@@ -1,0 +1,62 @@
+.benefist__careers {
+  padding-top: 120px;
+
+  &__box {
+    margin: 0;
+    padding: 0;
+    background-image: url(.././img/benefist_bgi.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 900px) center;
+  }
+  &__box--one {
+    margin: 0;
+    padding: 0;
+    background-image: url(.././img/benefist_pointer.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 300px) bottom;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+  }
+  &__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    width: 445px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+  &__btn {
+    padding: 14px 48px;
+    background-color: $yellow;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  &__img {
+    margin: 0;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

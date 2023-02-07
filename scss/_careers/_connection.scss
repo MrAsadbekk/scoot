@@ -1,0 +1,55 @@
+.connection {
+  padding-bottom: 160px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__box {
+    margin: 0;
+    padding: 0;
+    padding: 32px 64px 35px 40px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+    background-color: #f2f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__box--one {
+    margin: 0;
+    padding: 0;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+  }
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+  }
+  &__btn {
+    padding: 14px 67px;
+    background-color: $yellow;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
