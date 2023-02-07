@@ -14,7 +14,7 @@
   }
   &__box {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
   }
   &__minibox {
     margin: 0;
@@ -47,8 +47,6 @@
     background-image: url(../../img/about_input.svg);
     background-repeat: no-repeat;
     background-position: center;
-    // right: 20px;
-    // top: 10px;
     z-index: 10;
   }
   &__list--three {

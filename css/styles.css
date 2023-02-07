@@ -1498,7 +1498,7 @@ a {
 }
 .faqs__box {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 .faqs__minibox {
   margin: 0;
