@@ -2091,4 +2091,53 @@ a {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+}
+
+.location {
+  padding-bottom: 120px;
+}
+.location__maps {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+}
+.location__box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.location__title {
+  margin: 0;
+  padding: 0;
+  width: 351px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+.location__text {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  width: 445px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+.location__btn {
+  margin-left: auto;
+  padding: 14px 44px;
+  background-color: #fcb72b;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
