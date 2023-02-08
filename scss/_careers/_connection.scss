@@ -44,12 +44,71 @@
   &__btn {
     padding: 14px 67px;
     background-color: $yellow;
-    border: none;
+    border: 3px solid $yellow;
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
     color: #ffffff;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  &__btn:hover {
+    background-color: transparent;
+    color: $yellow;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .connection {
+    &__container {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .connection {
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .connection {
+    &__box {
+      flex-direction: column;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .connection {
+    padding-bottom: 120px;
+
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__box {
+      padding: 36px 32px 32px 32px;
+    }
+    &__box--one {
+      width: 100%;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }

@@ -16,3 +16,26 @@
     color: #ffffff;
   }
 }
+@media only screen and (max-width: 768px) {
+  .intro__careers {
+    &__container {
+      max-width: 1024px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-image: url(.././img/careers_intro768.png);
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .intro__careers {
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__title {
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}

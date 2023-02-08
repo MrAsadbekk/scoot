@@ -44,12 +44,13 @@
     text-align: center;
     color: #ffffff;
     background-color: $yellow;
-    border: none;
+    border: 3px solid $yellow;
     cursor: pointer;
     transition: all 0.3s ease;
   }
   &__btn:hover {
-    box-shadow: 0 0 5px 0 $yellow;
+    background-color: transparent;
+    color: $yellow;
   }
   &__decoration {
     position: absolute;

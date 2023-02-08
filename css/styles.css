@@ -416,7 +416,7 @@ a {
   transition: all 0.3s ease;
 }
 .header__link:hover {
-  color: #000;
+  color: #fcb72b;
 }
 .header__btn {
   padding: 14px 39px;
@@ -425,13 +425,14 @@ a {
   line-height: 25px;
   text-align: center;
   color: #ffffff;
-  border: none;
+  border: 3px solid #fcb72b;
   background-color: #fcb72b;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .header__btn:hover {
-  box-shadow: 0 0 5px 0 #fcb72b;
+  background-color: transparent;
+  color: #fcb72b;
 }
 .header__logo:hover {
   transition: all 0.3 ease;
@@ -548,12 +549,13 @@ a {
   text-align: center;
   color: #ffffff;
   background-color: #fcb72b;
-  border: none;
+  border: 3px solid #fcb72b;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .intro__btn:hover {
-  box-shadow: 0 0 5px 0 #fcb72b;
+  background-color: transparent;
+  color: #fcb72b;
 }
 .intro__decoration {
   position: absolute;
@@ -889,12 +891,13 @@ a {
   text-align: center;
   color: #ffffff;
   background-color: #fcb72b;
-  border: none;
+  border: 3px solid #fcb72b;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .benefist__btn:hover {
-  box-shadow: 0 0 5px 0 #fcb72b;
+  background-color: transparent;
+  color: #fcb72b;
 }
 .benefist__box--two {
   display: flex;
@@ -1247,10 +1250,9 @@ a {
 .footer__link {
   width: 24px;
   height: 24px;
-  transition: all 0.3s ease;
 }
-.footer__link:hover {
-  opacity: 0.7;
+.footer__link:hover svg {
+  fill: #e5ecf4;
 }
 .footer__box--link {
   font-weight: 700;
@@ -1260,7 +1262,7 @@ a {
   transition: all 0.3s ease;
 }
 .footer__box--link:hover {
-  color: #000;
+  color: #fcb72b;
 }
 .footer__list {
   margin: 0;
@@ -1280,6 +1282,7 @@ a {
   width: 24px;
   height: 24px;
   fill: #fcb72b;
+  transition: all 0.3s ease;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1976,6 +1979,25 @@ a {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .intro__careers__container {
+    max-width: 1024px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url(.././img/careers_intro768.png);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .intro__careers__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .intro__careers__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 .benefist__careers {
   padding-top: 120px;
 }
@@ -2024,13 +2046,18 @@ a {
 .benefist__careers__btn {
   padding: 14px 48px;
   background-color: #fcb72b;
-  border: none;
+  border: 3px solid #fcb72b;
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.benefist__careers__btn:hover {
+  background-color: transparent;
+  color: #fcb72b;
 }
 .benefist__careers__img {
   margin: 0;
@@ -2038,6 +2065,133 @@ a {
   z-index: -1;
 }
 
+@media only screen and (max-width: 1350px) {
+  .benefist__careers__box {
+    background-position: calc(50% + 800px) center;
+  }
+  .benefist__careers__box--one {
+    background-position: calc(50% + 400px) bottom;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .benefist__careers__container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .benefist__careers__box {
+    background-position: calc(50% + 750px) center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .benefist__careers__container {
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: column;
+  }
+  .benefist__careers__container .benefist__careers__img {
+    order: -1;
+  }
+  .benefist__careers__img {
+    margin-bottom: 64px;
+  }
+  .benefist__careers__box {
+    background-position: calc(50% + 600px) top;
+  }
+  .benefist__careers__box--one {
+    background-position: 50% center;
+  }
+  .benefist__careers__title {
+    width: 600px;
+    text-align: center;
+  }
+  .benefist__careers__text {
+    width: 600px;
+    text-align: center;
+  }
+  .benefist__careers__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .benefist__careers__box {
+    background-position: calc(50% + 500px) top;
+  }
+  .benefist__careers__box--one {
+    background-position: calc(50% + 50px) center;
+  }
+  .benefist__careers__title {
+    width: 457px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefist__careers__text {
+    width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .benefist__careers__box {
+    background-position: calc(50% + 500px) top;
+  }
+  .benefist__careers__box--one {
+    background-position: calc(50% + 100px) center;
+  }
+  .benefist__careers__title {
+    width: 457px;
+  }
+  .benefist__careers__text {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .benefist__careers__box {
+    background-position: calc(50% + 450px) top;
+  }
+  .benefist__careers__box--one {
+    background-position: calc(50% + 150px) center;
+  }
+  .benefist__careers__title {
+    width: 440px;
+  }
+  .benefist__careers__text {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .benefist__careers__box {
+    background-position: calc(50% + 450px) top;
+  }
+  .benefist__careers__box--one {
+    background-position: calc(50% + 200px) calc(50% - 50px);
+  }
+  .benefist__careers__title {
+    width: 380px;
+  }
+  .benefist__careers__text {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .benefist__careers__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .benefist__careers__title {
+    width: 311px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .benefist__careers__text {
+    width: 311px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 .connection {
   padding-bottom: 160px;
 }
@@ -2084,15 +2238,67 @@ a {
 .connection__btn {
   padding: 14px 67px;
   background-color: #fcb72b;
-  border: none;
+  border: 3px solid #fcb72b;
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.connection__btn:hover {
+  background-color: transparent;
+  color: #fcb72b;
 }
 
+@media only screen and (max-width: 1024px) {
+  .connection__container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .connection__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .connection__box {
+    flex-direction: column;
+  }
+  .connection__title {
+    text-align: center;
+  }
+  .connection__text {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .connection {
+    padding-bottom: 120px;
+  }
+  .connection__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .connection__box {
+    padding: 36px 32px 32px 32px;
+  }
+  .connection__box--one {
+    width: 100%;
+  }
+  .connection__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .connection__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 .location {
   padding-bottom: 120px;
 }
@@ -2101,6 +2307,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
+  margin-top: 120px;
 }
 .location__box {
   margin: 0;
@@ -2134,11 +2341,175 @@ a {
   margin-left: auto;
   padding: 14px 44px;
   background-color: #fcb72b;
-  border: none;
+  border: 3px solid #fcb72b;
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.location__btn:hover {
+  background-color: transparent;
+  color: #fcb72b;
+}
+.location__maps__group {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.location__nav {
+  width: 111px;
+  text-align: center;
+  padding: 22px 100px;
+  background-color: rgba(252, 183, 43, 0.15);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+@media only screen and (max-width: 1350px) {
+  .location__container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .location__maps {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .location__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .location__text {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .location__title {
+    width: 320px;
+  }
+  .location__text {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .location__box {
+    flex-direction: column;
+  }
+  .location__btn {
+    margin-right: auto;
+  }
+  .location__title {
+    width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .location__text {
+    width: 600px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .location__maps {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .location__maps {
+    width: 700px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .location__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .location__maps {
+    width: 689px;
+    height: 337px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .location__maps {
+    width: 600px;
+    height: 337px;
+  }
+  .location__title {
+    width: 457px;
+  }
+  .location__text {
+    width: 573px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .location__maps {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 550px;
+    height: 300px;
+  }
+  .location__maps__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .location__maps {
+    width: 450px;
+    height: 250px;
+  }
+  .location__title {
+    width: 400px;
+  }
+  .location__text {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .location__maps {
+    width: 420px;
+    height: 250px;
+  }
+  .location__title {
+    width: 311px;
+  }
+  .location__text {
+    width: 311px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .location__maps {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .location__maps {
+    width: 311px;
+    height: 200px;
+  }
+  .location__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .location__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=styles.css.map */

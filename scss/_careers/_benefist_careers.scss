@@ -46,17 +46,167 @@
   &__btn {
     padding: 14px 48px;
     background-color: $yellow;
-    border: none;
+    border: 3px solid $yellow;
     font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
     color: #ffffff;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  &__btn:hover {
+    background-color: transparent;
+    color: $yellow;
   }
   &__img {
     margin: 0;
     border-radius: 50%;
     z-index: -1;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .benefist__careers {
+    &__box {
+      background-position: calc(50% + 800px) center;
+    }
+    &__box--one {
+      background-position: calc(50% + 400px) bottom;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .benefist__careers {
+    &__container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .benefist__careers {
+    &__box {
+      background-position: calc(50% + 750px) center;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .benefist__careers {
+    &__container {
+      padding-left: 40px;
+      padding-right: 40px;
+      flex-direction: column;
+    }
+    &__container &__img {
+      order: -1;
+    }
+    &__img {
+      margin-bottom: 64px;
+    }
+    &__box {
+      background-position: calc(50% + 600px) top;
+    }
+    &__box--one {
+      background-position: calc(50%) center;
+    }
+    &__title {
+      width: 600px;
+      text-align: center;
+    }
+    &__text {
+      width: 600px;
+      text-align: center;
+    }
+    &__btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .benefist__careers {
+    &__box {
+      background-position: calc(50% + 500px) top;
+    }
+    &__box--one {
+      background-position: calc(50% + 50px) center;
+    }
+    &__title {
+      width: 457px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__text {
+      width: 573px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .benefist__careers {
+    &__box {
+      background-position: calc(50% + 500px) top;
+    }
+    &__box--one {
+      background-position: calc(50% + 100px) center;
+    }
+    &__title {
+      width: 457px;
+    }
+    &__text {
+      width: 500px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .benefist__careers {
+    &__box {
+      background-position: calc(50% + 450px) top;
+    }
+    &__box--one {
+      background-position: calc(50% + 150px) center;
+    }
+    &__title {
+      width: 440px;
+    }
+    &__text {
+      width: 450px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .benefist__careers {
+    &__box {
+      background-position: calc(50% + 450px) top;
+    }
+    &__box--one {
+      background-position: calc(50% + 200px) calc(50% - 50px);
+    }
+    &__title {
+      width: 380px;
+    }
+    &__text {
+      width: 380px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .benefist__careers {
+    &__container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__title {
+      width: 311px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+    &__text {
+      width: 311px;
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }
