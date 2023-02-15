@@ -462,6 +462,7 @@ a {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 15;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -501,15 +502,15 @@ a {
   .header__nav {
     display: none;
     background-color: #333a44;
-    position: absolute;
-    top: 64px;
+    position: fixed;
+    top: 0;
     left: 0;
     height: 100%;
     width: 60%;
     z-index: 12;
   }
   .header__list {
-    margin-top: 64px;
+    margin-top: 128px;
     margin-left: 32px;
     flex-direction: column;
     gap: 24px;
@@ -519,7 +520,7 @@ a {
   }
   .header__btn {
     width: 192px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
     margin-left: 32px;
   }
   .header__menu {
