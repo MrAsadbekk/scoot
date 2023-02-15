@@ -7,11 +7,17 @@
     justify-content: space-between;
   }
   &__box {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     gap: 58px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   &__list {
     @include reset-list;
@@ -109,14 +115,41 @@
     }
     &__nav {
       display: none;
+      background-color: #333a44;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      height: 100%;
+      width: 60%;
+      z-index: 12;
+    }
+    &__list {
+      margin-top: 64px;
+      margin-left: 32px;
+      flex-direction: column;
+      gap: 24px;
+    }
+    &__link {
+      color: #e5ecf4;
     }
     &__btn {
-      display: none;
+      width: 192px;
+      margin-bottom: 24px;
+      margin-left: 32px;
     }
     &__menu {
       display: block;
       width: 20px;
       height: 16px;
+    }
+    &__open__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__open__menu {
+      background-image: url(.././img/close.svg);
     }
   }
 }

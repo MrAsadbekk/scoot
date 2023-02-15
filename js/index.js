@@ -1,3 +1,11 @@
+var elButton = document.querySelector(".header__menu");
+var elheader__nav = document.querySelector(".header__nav");
+
+elButton.addEventListener("click", function (evt) {
+  elheader__nav.classList.toggle("header__open__nav");
+  elButton.classList.toggle("header__open__menu");
+});
+
 var elButton1 = document.querySelector(".faqs__btn--one");
 var elfaqs__text1 = document.querySelector(".faqs__text1");
 
