@@ -15,6 +15,7 @@
     gap: 58px;
   }
   &__nav {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,6 +152,15 @@
     }
     &__open__menu {
       background-image: url(.././img/close.svg);
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header {
+    &__btn {
+      width: 140px;
+      font-size: 10px;
+      line-height: 15px;
     }
   }
 }

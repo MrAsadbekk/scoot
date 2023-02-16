@@ -403,6 +403,7 @@ a {
   gap: 58px;
 }
 .header__nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -536,6 +537,13 @@ a {
   }
   .header__open__menu {
     background-image: url(.././img/close.svg);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header__btn {
+    width: 140px;
+    font-size: 10px;
+    line-height: 15px;
   }
 }
 .intro__container {
